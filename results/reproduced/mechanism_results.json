@@ -1,0 +1,114 @@
+{
+  "method": "1 km CSV input, positive-property log-PCHIP derivative on displayed altitude interval",
+  "earth_mars_profile": "48-sample averaged GRAM-derived data, Titan nominal GRAM-derived data",
+  "notes": [
+    "gravity external, not read from atmospheric CSV",
+    "H0 is first-1-km pressure-fitted scale height",
+    "logarithmic mean-free-path gradient is 1/H_lambda, not H_lambda",
+    "interpolated derivative is diagnostic rather than a new atmospheric measurement"
+  ],
+  "gravity_sources": {
+    "Earth_and_Mars": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+    "Titan": "https://ntrs.nasa.gov/api/citations/20220016292/downloads/TM-20220016292.pdf?attachment=true"
+  },
+  "input_sha256": {
+    "earth3.csv": "f3e887d7f4efe4c6d6881600d9a58f7588298cee05563f9350748655f7131465",
+    "mars3(1).csv": "cc16136c0ab502f5ccebe7f5cc0fd67230a1b18bef4d22a40a148f3681db9618",
+    "titan3.csv": "72894c407099d78eaac4aec8a04a8f15bc6183ead6c9643b9a9712044a561eed"
+  },
+  "planetary_results": {
+    "Earth": {
+      "planet": "Earth",
+      "rho0_kgm3": 1.198642188,
+      "mu0_Pas": 1.79560526399e-05,
+      "a0_ms": 338.3065625,
+      "lambda0_m": 6.53118590797e-08,
+      "g0_ms2": 9.81,
+      "H0_pressure_km": 8.456506252543749,
+      "mu_over_rhoa_m": 4.428033402511507e-08,
+      "Lcrit_m": 0.07380055670852512,
+      "isothermal_zKn_km": 100.96156872751558,
+      "GRAM_zKn_km": 85.74178270160698,
+      "delta_isothermal_minus_GRAM_km": 15.219786025908604,
+      "inverse_local_lambda_scaleheight_at_crossing_per_km": 0.16983458394296605,
+      "local_Hlambda_at_crossing_km": 5.888082255000669,
+      "gradient_terms_PCHIP_per_km": {
+        "pressure": 0.1746013798155837,
+        "viscosity": -0.003174430853526873,
+        "temperature": -0.0017686794559194279,
+        "mixture_R": 0.0001524848364131316
+      },
+      "gradient_terms_native_1km_per_km": {
+        "pressure": 0.17323992962715004,
+        "viscosity": -0.0032678294037018648,
+        "temperature": -0.00182198488072083,
+        "mixture_R": 0.0001460865955975033
+      },
+      "actual_native_1km_loglambda_gradient_per_km": 0.1682962019402604,
+      "max_relative_mfp_identity_error": 3.915978652457852e-12,
+      "gravity_decline_by_crossing_pct": 2.6382496007331113
+    },
+    "Mars": {
+      "planet": "Mars",
+      "rho0_kgm3": 0.0173608785,
+      "mu0_Pas": 1.01463486059e-05,
+      "a0_ms": 225.243194,
+      "lambda0_m": 3.92809137731e-06,
+      "g0_ms2": 3.71,
+      "H0_pressure_km": 10.362494007031147,
+      "mu_over_rhoa_m": 2.594695537070821e-06,
+      "Lcrit_m": 4.324492561784702,
+      "isothermal_zKn_km": 81.26461287446425,
+      "GRAM_zKn_km": 75.16522161705657,
+      "delta_isothermal_minus_GRAM_km": 6.0993912574076745,
+      "inverse_local_lambda_scaleheight_at_crossing_per_km": 0.1289637164325696,
+      "local_Hlambda_at_crossing_km": 7.754118969755833,
+      "gradient_terms_PCHIP_per_km": {
+        "pressure": 0.14131681142495084,
+        "viscosity": -0.008157197628848633,
+        "temperature": -0.003950679198450773,
+        "mixture_R": -1.1476883597459413e-07
+      },
+      "gradient_terms_native_1km_per_km": {
+        "pressure": 0.1415389840506929,
+        "viscosity": -0.008494104607866426,
+        "temperature": -0.004230059518274558,
+        "mixture_R": -1.3868665168996104e-07
+      },
+      "actual_native_1km_loglambda_gradient_per_km": 0.1288146812376846,
+      "max_relative_mfp_identity_error": 4.869660230610862e-12,
+      "gravity_decline_by_crossing_pct": 4.291893710269634
+    },
+    "Titan": {
+      "planet": "Titan",
+      "rho0_kgm3": 5.435,
+      "mu0_Pas": 6.33839865826e-06,
+      "a0_ms": 199.28,
+      "lambda0_m": 9.04326355156e-09,
+      "g0_ms2": 1.35,
+      "H0_pressure_km": 19.783876637773936,
+      "mu_over_rhoa_m": 5.8521613025474964e-09,
+      "Lcrit_m": 0.009753602170912494,
+      "isothermal_zKn_km": 275.31392155485827,
+      "GRAM_zKn_km": 470.2084070455642,
+      "delta_isothermal_minus_GRAM_km": -194.8944854907059,
+      "inverse_local_lambda_scaleheight_at_crossing_per_km": 0.019391573163651445,
+      "local_Hlambda_at_crossing_km": 51.56879184379177,
+      "gradient_terms_PCHIP_per_km": {
+        "pressure": 0.021673128165905487,
+        "viscosity": -0.0014798394919700532,
+        "temperature": -0.0008020297909193391,
+        "mixture_R": 0.0
+      },
+      "gradient_terms_native_1km_per_km": {
+        "pressure": 0.021683318454466215,
+        "viscosity": -0.0014800729909566135,
+        "temperature": -0.0008022464617192435,
+        "mixture_R": 0.0
+      },
+      "actual_native_1km_loglambda_gradient_per_km": 0.0194009990005639,
+      "max_relative_mfp_identity_error": 4.618305737835726e-12,
+      "gravity_decline_by_crossing_pct": 28.497631729130333
+    }
+  }
+}

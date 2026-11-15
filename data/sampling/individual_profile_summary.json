@@ -1,0 +1,38 @@
+[
+  {
+    "planet": "Earth",
+    "n": 48,
+    "weighted_mean_km": 85.66226425532152,
+    "weighted_std_km": 1.1015622366715385,
+    "min_km": 82.49463773519234,
+    "max_km": 87.60495795570927,
+    "q10_km": 83.8098547962793,
+    "median_km": 85.88605365128645,
+    "q90_km": 86.66631351251311,
+    "mean_profile_boundary_km": 85.74178270160698,
+    "comparison_to_mean_profile_km": -0.07951844628546212,
+    "reference_validation": {
+      "Temperature_K_max_rel": 2.406396187115562e-10,
+      "Pressure_Pa_max_rel": 4.306265661098924e-10,
+      "Density_kgm3_max_rel": 4.236761136888352e-10
+    }
+  },
+  {
+    "planet": "Mars",
+    "n": 48,
+    "weighted_mean_km": 74.52041315529068,
+    "weighted_std_km": 3.0750378269025007,
+    "min_km": 67.66662890550779,
+    "max_km": 80.20768609585392,
+    "q10_km": 69.73942507428261,
+    "median_km": 74.57882740230518,
+    "q90_km": 78.08178717924463,
+    "mean_profile_boundary_km": 75.16522161705697,
+    "comparison_to_mean_profile_km": -0.6448084617662886,
+    "reference_validation": {
+      "Temperature_K_max_rel": 4.222493639186967e-09,
+      "Pressure_Pa_max_rel": 4.960707811736883e-09,
+      "Density_kgm3_max_rel": 4.562717256735826e-09
+    }
+  }
+]

@@ -1,0 +1,4 @@
+planet,altitude_km,velocity_m_per_s,length_m,gram_Re,gram_Ma,gram_Kn,gram_selected_model,isothermal_Re,isothermal_Ma,isothermal_Kn,isothermal_selected_model,different_model_selected
+Earth,90,100,1,25.9817376225,0.358651872472,0.0205859504522,Rarefied/slip-corrected,159.373401422,0.295589891195,0.00273561447898,Incompressible Navier-Stokes,True
+Mars,78,100,1,53.5547504317,0.52686566808,0.0143695202201,Rarefied/slip-corrected,92.1009624416,0.443964579902,0.00729758784524,Compressible Navier-Stokes,True
+Titan,350,100,1,522.545438675,0.369276218612,0.00104656780244,Compressible Navier-Stokes,1.77844663688,0.501806503412,0.436017928005,Rarefied/slip-corrected,True

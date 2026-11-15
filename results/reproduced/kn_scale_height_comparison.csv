@@ -1,0 +1,4 @@
+planet,H0_surface_pressure_km,z_Kn_GRAM_L1_km,z_Kn_isothermal_L1_km,isothermal_minus_GRAM_km,isothermal_relative_error_pct,Hlambda_local_at_L1_km,slope_z_vs_lnL_L0p1_to_1_km,slope_z_vs_lnL_L1_to_10_km,surface_H0_predicted_slope_km,actual_z_Kn_L0p1_km,actual_z_Kn_L10_km
+Earth,8.456506,85.741783,100.961569,15.219786,17.750723,5.888082,6.508849,5.649302,8.456506,70.754603,98.74978
+Mars,10.362494,75.165222,81.264613,6.099391,8.114645,7.754119,8.913226,7.27186,10.362494,54.64176,91.909299
+Titan,19.783877,470.208407,275.313922,-194.894485,-41.448533,51.568792,53.237194,47.507663,19.783877,347.625238,579.598843

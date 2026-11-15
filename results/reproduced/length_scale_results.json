@@ -1,0 +1,69 @@
+{
+  "input_files": {
+    "earth": "earth3.csv",
+    "mars": "mars3.csv",
+    "titan": "titan3.csv"
+  },
+  "method": "NASA GRAM-derived Earth/Mars averaged, Titan nominal; Chapman-Enskog/Wilke mu; viscosity-derived lambda. PCHIP log interpolated properties, original sampling 1km.",
+  "thresholds": {
+    "Kn": 0.01,
+    "Ma": 0.3,
+    "Re_min": 10000.0,
+    "Re_transition": 500000.0
+  },
+  "length_samples_m": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "velocity_domain_ms": [
+    0.1,
+    1000.0
+  ],
+  "planetary": {
+    "earth": {
+      "surface_max_lowmach_Re_factor_per_m": 6775016.643502395,
+      "max_Re_position_km": 0.0,
+      "minimum_L_for_general_BL_m": 0.07380055670852512,
+      "kn_boundary_altitude_km": {
+        "0.01": 51.733958543970616,
+        "0.1": 70.75460305405954,
+        "1": 85.74178270160698,
+        "10": 98.74978033987152
+      },
+      "max_lowmach_Re_at_L1m": 6775016.643502395,
+      "max_lowmach_Re_at_L3m": 20325049.930507183,
+      "max_lowmach_Re_at_L10m": 67750166.43502395
+    },
+    "mars": {
+      "surface_max_lowmach_Re_factor_per_m": 115620.50179446995,
+      "max_Re_position_km": 0.0,
+      "minimum_L_for_general_BL_m": 4.324492561784702,
+      "kn_boundary_altitude_km": {
+        "0.01": 33.95123203606697,
+        "0.1": 54.641760277057,
+        "1": 75.16522161705697,
+        "10": 91.90929861447532
+      },
+      "max_lowmach_Re_at_L1m": 115620.50179446995,
+      "max_lowmach_Re_at_L3m": 346861.50538340985,
+      "max_lowmach_Re_at_L10m": 1156205.0179446996
+    },
+    "titan": {
+      "surface_max_lowmach_Re_factor_per_m": 51263111.94966675,
+      "max_Re_position_km": 0.0,
+      "minimum_L_for_general_BL_m": 0.009753602170912496,
+      "kn_boundary_altitude_km": {
+        "0.01": 236.13787619152214,
+        "0.1": 347.62523838143886,
+        "1": 470.2084070455666,
+        "10": 579.598843067834
+      },
+      "max_lowmach_Re_at_L1m": 51263111.94966675,
+      "max_lowmach_Re_at_L3m": 153789335.84900028,
+      "max_lowmach_Re_at_L10m": 512631119.4966675
+    }
+  },
+  "mars_L10m_general_BL_max_altitude_km": 8.10040395907399
+}

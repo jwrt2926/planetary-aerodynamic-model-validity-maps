@@ -1,0 +1,87 @@
+{
+  "method": "1-km surface-pressure-calibrated isothermal model versus actual GRAM-derived atmospheric properties; U=100m/s, L=1m",
+  "thresholds": {
+    "Kn": 0.01,
+    "Mach": 0.3,
+    "Re_min": 10000.0,
+    "Re_trans": 500000.0
+  },
+  "sources_sha256": {
+    "earth3.csv": "f3e887d7f4efe4c6d6881600d9a58f7588298cee05563f9350748655f7131465",
+    "mars3.csv": "cc16136c0ab502f5ccebe7f5cc0fd67230a1b18bef4d22a40a148f3681db9618",
+    "titan3.csv": "72894c407099d78eaac4aec8a04a8f15bc6183ead6c9643b9a9712044a561eed"
+  },
+  "examples": [
+    {
+      "planet": "Earth",
+      "altitude_km": 90.0,
+      "velocity_m_per_s": 100.0,
+      "length_m": 1.0,
+      "gram_Re": 25.981737622462763,
+      "gram_Ma": 0.35865187247155567,
+      "gram_Kn": 0.0205859504522,
+      "gram_selected_model": "Rarefied/slip-corrected",
+      "isothermal_Re": 159.37340142233703,
+      "isothermal_Ma": 0.2955898911952085,
+      "isothermal_Kn": 0.0027356144789812513,
+      "isothermal_selected_model": "Incompressible Navier-Stokes",
+      "different_model_selected": true
+    },
+    {
+      "planet": "Mars",
+      "altitude_km": 78.0,
+      "velocity_m_per_s": 100.0,
+      "length_m": 1.0,
+      "gram_Re": 53.55475043172006,
+      "gram_Ma": 0.52686566807955,
+      "gram_Kn": 0.0143695202201,
+      "gram_selected_model": "Rarefied/slip-corrected",
+      "isothermal_Re": 92.10096244155599,
+      "isothermal_Ma": 0.4439645799020236,
+      "isothermal_Kn": 0.0072975878452351374,
+      "isothermal_selected_model": "Compressible Navier-Stokes",
+      "different_model_selected": true
+    },
+    {
+      "planet": "Titan",
+      "altitude_km": 350.0,
+      "velocity_m_per_s": 100.0,
+      "length_m": 1.0,
+      "gram_Re": 522.545438675406,
+      "gram_Ma": 0.3692762186115214,
+      "gram_Kn": 0.00104656780244,
+      "gram_selected_model": "Compressible Navier-Stokes",
+      "isothermal_Re": 1.7784466368823522,
+      "isothermal_Ma": 0.5018065034122842,
+      "isothermal_Kn": 0.436017928004633,
+      "isothermal_selected_model": "Rarefied/slip-corrected",
+      "different_model_selected": true
+    }
+  ],
+  "crossings": [
+    {
+      "planet": "Earth",
+      "surface_pressure_scale_height_km": 8.456506252543758,
+      "gram_Kn_boundary_km": 85.74178270160698,
+      "isothermal_Kn_boundary_km": 100.9615687275157,
+      "isothermal_minus_gram_km": 15.219786025908718,
+      "isothermal_minus_gram_percent_of_gram": 17.750722630617144
+    },
+    {
+      "planet": "Mars",
+      "surface_pressure_scale_height_km": 10.362494007031144,
+      "gram_Kn_boundary_km": 75.16522161705697,
+      "isothermal_Kn_boundary_km": 81.26461287446422,
+      "isothermal_minus_gram_km": 6.099391257407248,
+      "isothermal_minus_gram_percent_of_gram": 8.114645478572147
+    },
+    {
+      "planet": "Titan",
+      "surface_pressure_scale_height_km": 19.78387663777392,
+      "gram_Kn_boundary_km": 470.20840704556423,
+      "isothermal_Kn_boundary_km": 275.31392155485804,
+      "isothermal_minus_gram_km": -194.8944854907062,
+      "isothermal_minus_gram_percent_of_gram": -41.448532729407475
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "nominal_scenarios_verified": 24,
+  "max_absolute_percent_point_difference": 0.0,
+  "independent_rerun": "compute_sensitivity.py from original source on data/*.csv",
+  "area_definition": "logarithmic freestream velocity grid and evenly spaced altitude; plotting window dependent",
+  "expected_broader_BL_5e5_pct": {
+    "Earth": 3.268089113218172,
+    "Mars": 0,
+    "Titan": 4.343760723292477
+  },
+  "expected_broader_BL_1e7_pct": {
+    "Earth": 0,
+    "Mars": 0,
+    "Titan": 0.6726215123336698
+  }
+}

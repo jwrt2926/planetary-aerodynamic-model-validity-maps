@@ -1,0 +1,52 @@
+{
+  "input_files": {
+    "Earth": "earth3.csv",
+    "Mars": "mars3.csv",
+    "Titan": "titan3.csv"
+  },
+  "planet_results": {
+    "Earth": {
+      "sha256": "f3e887d7f4efe4c6d6881600d9a58f7588298cee05563f9350748655f7131465",
+      "H_pressure_surface_km": 8.456506252543749,
+      "Hlambda_local_km": 5.888082255000669,
+      "Hlambda_over_H0": 0.6962783541051024,
+      "dlnlambda_dz_perkm": 0.16983458394296605,
+      "z0_km": 85.74178270160698,
+      "kn0p1_z_km": 98.74978033987152,
+      "kn0p01_L10_z_km": 98.74978033987152,
+      "plus10_shift_exact_km": -0.5645247309234946,
+      "plus10_shift_local_km": -0.5611941784267686,
+      "minus10_shift_exact_km": 0.6236613635986146,
+      "minus10_shift_local_km": 0.6203713826225675
+    },
+    "Mars": {
+      "sha256": "cc16136c0ab502f5ccebe7f5cc0fd67230a1b18bef4d22a40a148f3681db9618",
+      "H_pressure_surface_km": 10.362494007031147,
+      "Hlambda_local_km": 7.754118969755884,
+      "Hlambda_over_H0": 0.7482869437120608,
+      "dlnlambda_dz_perkm": 0.12896371643256876,
+      "z0_km": 75.16522161705697,
+      "kn0p1_z_km": 91.90929861447532,
+      "kn0p01_L10_z_km": 91.90929861447532,
+      "plus10_shift_exact_km": -0.7341699522338985,
+      "plus10_shift_local_km": -0.7390464732315598,
+      "minus10_shift_exact_km": 0.8184232332707921,
+      "minus10_shift_local_km": 0.8169779731256132
+    },
+    "Titan": {
+      "sha256": "72894c407099d78eaac4aec8a04a8f15bc6183ead6c9643b9a9712044a561eed",
+      "H_pressure_surface_km": 19.783876637773936,
+      "Hlambda_local_km": 51.56879184379172,
+      "Hlambda_over_H0": 2.606607025911692,
+      "dlnlambda_dz_perkm": 0.019391573163651463,
+      "z0_km": 470.20840704556423,
+      "kn0p1_z_km": 579.598843067834,
+      "kn0p01_L10_z_km": 579.598843067834,
+      "plus10_shift_exact_km": -4.949917958066806,
+      "plus10_shift_local_km": -4.915030822923592,
+      "minus10_shift_exact_km": 5.441690808230021,
+      "minus10_shift_local_km": 5.4333145005130055
+    }
+  },
+  "method": "PCHIP on log lambda as previously used. Exact Kn crossing for each criterion, length and uniformly-scaled mean-free-path."
+}

@@ -1,0 +1,86 @@
+{
+  "data_sources": {
+    "Earth": {
+      "source_filename": "earth3.csv",
+      "sha256": "f3e887d7f4efe4c6d6881600d9a58f7588298cee05563f9350748655f7131465",
+      "n_rows": 2201,
+      "n_columns": 67,
+      "altitude_min_km": 0.0,
+      "altitude_max_km": 2200.0
+    },
+    "Mars": {
+      "source_filename": "mars3.csv",
+      "sha256": "cc16136c0ab502f5ccebe7f5cc0fd67230a1b18bef4d22a40a148f3681db9618",
+      "n_rows": 2201,
+      "n_columns": 61,
+      "altitude_min_km": 0.0,
+      "altitude_max_km": 2200.0
+    },
+    "Titan": {
+      "source_filename": "titan3.csv",
+      "sha256": "72894c407099d78eaac4aec8a04a8f15bc6183ead6c9643b9a9712044a561eed",
+      "n_rows": 2201,
+      "n_columns": 38,
+      "altitude_min_km": 0.0,
+      "altitude_max_km": 2200.0
+    }
+  },
+  "method": {
+    "L_m": 1.0,
+    "thresholds": [
+      0.01,
+      0.1,
+      10.0
+    ],
+    "interpolation": "PCHIP on log(lambda) vs native 1 km z (no new GRAM evaluations)",
+    "uncertainty": "Upper-altitude extrapolation within existing GRAM-derived profile is not validation."
+  },
+  "planets": [
+    {
+      "planet": "Earth",
+      "z_kn_0_01_km": 85.74178270160698,
+      "z_kn_0_1_km": 98.74978033987152,
+      "z_kn_10_km": 129.3408999809806,
+      "slip_interval_km": 13.007997638264541,
+      "transition_interval_km": 30.591119641109074,
+      "rarefied_to_free_molecular_interval_km": 43.599117279373615,
+      "plotted_zmax_km": 100.0,
+      "Kn_at_plot_top": 0.12668182216900004,
+      "regime_at_plot_top": "transitional"
+    },
+    {
+      "planet": "Mars",
+      "z_kn_0_01_km": 75.16522161705697,
+      "z_kn_0_1_km": 91.90929861447532,
+      "z_kn_10_km": 122.0220848787483,
+      "slip_interval_km": 16.744076997418347,
+      "transition_interval_km": 30.112786264272984,
+      "rarefied_to_free_molecular_interval_km": 46.85686326169133,
+      "plotted_zmax_km": 100.0,
+      "Kn_at_plot_top": 0.31260816710700007,
+      "regime_at_plot_top": "transitional"
+    },
+    {
+      "planet": "Titan",
+      "z_kn_0_01_km": 470.2084070455666,
+      "z_kn_0_1_km": 579.598843067834,
+      "z_kn_10_km": 808.728847596118,
+      "slip_interval_km": 109.39043602226735,
+      "transition_interval_km": 229.13000452828408,
+      "rarefied_to_free_molecular_interval_km": 338.5204405505514,
+      "plotted_zmax_km": 500.0,
+      "Kn_at_plot_top": 0.017974376483400004,
+      "regime_at_plot_top": "slip"
+    }
+  ],
+  "analytical_corner_check": {
+    "gamma_assumed": 1.4,
+    "Ma_upper": 0.3,
+    "Re_lower": 10000.0,
+    "Kn_L_at_corner": 4.4488238577871006e-05,
+    "delta99_over_L_at_corner": 0.05,
+    "Kn_delta99_at_corner": 0.0008897647715574201,
+    "Kn_delta99_to_Kn_L_ratio": 20.0,
+    "interpretation": "Illustrative Blasius delta99; not actual gradient-length Kn or turbulent BL thickness."
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "source": "NASA GRAM-derived profiles (not newly rerun GRAM), 1km original altitude resolution",
+  "master_map": "reference gamma=1.4 and idealized Kn=sqrt(pi gamma/2)*Ma/Re; only approximate for actual planetary datasets",
+  "trajectories": "independent Re=rho U L / mu, Ma=U/a_GRAM, Kn=lambda_derived/L; log-PCHIP at 0.05km or finer",
+  "characteristic_length_m": 1.0,
+  "velocity_cases_m_s": [
+    10.0,
+    100.0
+  ],
+  "thresholds": {
+    "Kn": 0.01,
+    "Ma": 0.3,
+    "Re_min": 10000.0,
+    "Re_transition": 500000.0
+  },
+  "plotted_altitude_ranges": "0 km to first Kn=0.01 crossing for each planet",
+  "planets": {
+    "earth": {
+      "10_ms": {
+        "U_ms": 10.0,
+        "z_end_Kn_0p01_km": 85.74178270160698,
+        "surface_Re": 667542.1441662004,
+        "surface_Ma": 0.029558989119520845,
+        "Re_at_Kn_boundary": 5.320447250744046,
+        "Ma_at_Kn_boundary": 0.03558290169443954,
+        "surface_class": "Boundary-layer",
+        "mastermap_class_disagreement_pct": 0.04997501249375312,
+        "max_gamma_in_plot": 1.401992013962082,
+        "min_gamma_in_plot": 1.382306597,
+        "max_Kn_identity_ratio_deviation_pct": 0.8859581482403733,
+        "crossings_km": {
+          "Re_5e5": [
+            3.231587133236114
+          ],
+          "Re_1e4": [
+            30.854520120358234
+          ]
+        }
+      },
+      "100_ms": {
+        "U_ms": 100.0,
+        "z_end_Kn_0p01_km": 85.74178270160698,
+        "surface_Re": 6675421.441662004,
+        "surface_Ma": 0.29558989119520845,
+        "Re_at_Kn_boundary": 53.20447250744046,
+        "Ma_at_Kn_boundary": 0.3558290169443954,
+        "surface_class": "Boundary-layer",
+        "mastermap_class_disagreement_pct": 0.04997501249375312,
+        "max_gamma_in_plot": 1.401992013962082,
+        "min_gamma_in_plot": 1.382306597,
+        "max_Kn_identity_ratio_deviation_pct": 0.8859581482403733,
+        "crossings_km": {
+          "Re_5e5": [
+            21.27349463570808
+          ],
+          "Re_1e4": [
+            45.65917477394003
+          ],
+          "Ma_0p3": [
+            1.8500240453481427
+          ]
+        }
+      },
+      "kn_boundary_altitude_km": 85.74178270160698
+    },
+    "mars": {
+      "10_ms": {
+        "U_ms": 10.0,
+        "z_end_Kn_0p01_km": 75.16522161705657,
+        "surface_Re": 17110.469169081014,
+        "surface_Ma": 0.04439645799020235,
+        "Re_at_Kn_boundary": 7.737188224972814,
+        "Ma_at_Kn_boundary": 0.05254144103622196,
+        "surface_class": "Blasius",
+        "mastermap_class_disagreement_pct": 0.09995002498750624,
+        "max_gamma_in_plot": 1.386714655652887,
+        "min_gamma_in_plot": 1.3455680759099942,
+        "max_Kn_identity_ratio_deviation_pct": 2.0871831875631353,
+        "crossings_km": {
+          "Re_1e4": [
+            4.573911642133074
+          ]
+        }
+      },
+      "100_ms": {
+        "U_ms": 100.0,
+        "z_end_Kn_0p01_km": 75.16522161705657,
+        "surface_Re": 171104.69169081014,
+        "surface_Ma": 0.4439645799020235,
+        "Re_at_Kn_boundary": 77.37188224972815,
+        "Ma_at_Kn_boundary": 0.5254144103622196,
+        "surface_class": "Compressible NS",
+        "mastermap_class_disagreement_pct": 0.09995002498750624,
+        "max_gamma_in_plot": 1.386714655652887,
+        "min_gamma_in_plot": 1.3455680759099942,
+        "max_Kn_identity_ratio_deviation_pct": 2.0871831875631575,
+        "crossings_km": {
+          "Re_1e4": [
+            30.49350281400491
+          ]
+        }
+      },
+      "kn_boundary_altitude_km": 75.16522161705657
+    },
+    "titan": {
+      "10_ms": {
+        "U_ms": 10.0,
+        "z_end_Kn_0p01_km": 470.2084070455642,
+        "surface_Re": 8574720.987164913,
+        "surface_Ma": 0.05018065034122841,
+        "Re_at_Kn_boundary": 5.9155536521371905,
+        "Ma_at_Kn_boundary": 0.03994300499542743,
+        "surface_class": "Boundary-layer",
+        "mastermap_class_disagreement_pct": 0.02126528442317916,
+        "max_gamma_in_plot": 1.4735,
+        "min_gamma_in_plot": 1.4002,
+        "max_Kn_identity_ratio_deviation_pct": 4.20413274454845,
+        "crossings_km": {
+          "Re_5e5": [
+            55.782205913789824
+          ],
+          "Re_1e4": [
+            124.6205299696671
+          ]
+        }
+      },
+      "100_ms": {
+        "U_ms": 100.0,
+        "z_end_Kn_0p01_km": 470.2084070455642,
+        "surface_Re": 85747209.87164915,
+        "surface_Ma": 0.501806503412284,
+        "Re_at_Kn_boundary": 59.1555365213719,
+        "Ma_at_Kn_boundary": 0.39943004995427434,
+        "surface_class": "Compressible NS",
+        "mastermap_class_disagreement_pct": 0.02126528442317916,
+        "max_gamma_in_plot": 1.4735,
+        "min_gamma_in_plot": 1.4002,
+        "max_Kn_identity_ratio_deviation_pct": 4.204132744548472,
+        "crossings_km": {
+          "Re_5e5": [
+            82.3417783898218
+          ],
+          "Re_1e4": [
+            210.34930327079
+          ]
+        }
+      },
+      "kn_boundary_altitude_km": 470.2084070455642
+    }
+  }
+}

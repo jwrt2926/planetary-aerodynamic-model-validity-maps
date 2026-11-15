@@ -1,0 +1,87 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "figure_jobs": {
+    "fig01": {
+      "script": "fig01_combined_maps.py",
+      "files": [
+        "fig01.png",
+        "fig01.pdf",
+        "fig01.svg"
+      ],
+      "stdout_tail": "{\n  \"reference\": \"NASA GRAM-derived atmospheres, composition-sensitive Chapman-Enskog/Wilke viscosity\",\n  \"thresholds\": {\n    \"L_m\": 1.0,\n    \"Kn\": 0.01,\n    \"Ma\": 0.3,\n    \"Re_min\": 10000.0,\n    \"Re_transition\": 500000.0\n  },\n  \"source_CSV_files\": [\n    \"earth3.csv\",\n    \"mars3.csv\",\n    \"titan3.csv\"\n  ],\n  \"source_altitude_spacing_km\": 1,\n  \"display_altitude_spacing_km\": 0.05,\n  \"method\": \"positive data log-PCHIP interpolated on display grid, analytical boundary polygons; no image generation or classification smoothing\",\n  \"earth\": {\n    \"display_range_km\": [\n      0,\n      100\n    ],\n    \"Kn0p01_boundary_km\": 85.74178270160698,\n    \"local_Mach_boundary_ms\": [\n      81.81051041999996,\n      101.49196875000001\n    ]\n  },\n  \"mars\": {\n    \"display_range_km\": [\n      0,\n      100\n    ],\n    \"Kn0p01_boundary_km\": 75.16522161705657,\n    \"local_Mach_boundary_ms\": [\n      54.81340620000002,\n      68.76058319999997\n    ]\n  },\n  \"titan\": {\n    \"display_range_km\": [\n      0,\n      500\n    ],\n    \"Kn0p01_boundary_km\": 470.20840704556423,\n    \"local_Mach_boundary_ms\": [\n      51.455999999999996,\n      81.94499999999995\n    ]\n  }\n}\n/tmp/planetary_figs_5drn776t/Fig1_Planetary_Model_Validity_Combined.pdf 467016\n/tmp/planetary_figs_5drn776t/Fig1_Planetary_Model_Validity_Combined.svg 1605114\n/tmp/planetary_figs_5drn776t/Fig1_Planetary_Model_Validity_Combined.png 286833\n"
+    },
+    "fig02": {
+      "script": "fig02_length_effects.py",
+      "files": [
+        "fig02.png",
+        "fig02.pdf",
+        "fig02.svg"
+      ],
+      "stdout_tail": " 0.0,\n      \"minimum_L_for_general_BL_m\": 0.07380055670852512,\n      \"kn_boundary_altitude_km\": {\n        \"0.01\": 51.733958543970616,\n        \"0.1\": 70.75460305405954,\n        \"1\": 85.74178270160698,\n        \"10\": 98.74978033987152\n      },\n      \"max_lowmach_Re_at_L1m\": 6775016.643502395,\n      \"max_lowmach_Re_at_L3m\": 20325049.930507183,\n      \"max_lowmach_Re_at_L10m\": 67750166.43502395\n    },\n    \"mars\": {\n      \"surface_max_lowmach_Re_factor_per_m\": 115620.50179446995,\n      \"max_Re_position_km\": 0.0,\n      \"minimum_L_for_general_BL_m\": 4.324492561784702,\n      \"kn_boundary_altitude_km\": {\n        \"0.01\": 33.95123203606697,\n        \"0.1\": 54.641760277057,\n        \"1\": 75.16522161705697,\n        \"10\": 91.90929861447532\n      },\n      \"max_lowmach_Re_at_L1m\": 115620.50179446995,\n      \"max_lowmach_Re_at_L3m\": 346861.50538340985,\n      \"max_lowmach_Re_at_L10m\": 1156205.0179446996\n    },\n    \"titan\": {\n      \"surface_max_lowmach_Re_factor_per_m\": 51263111.94966675,\n      \"max_Re_position_km\": 0.0,\n      \"minimum_L_for_general_BL_m\": 0.009753602170912496,\n      \"kn_boundary_altitude_km\": {\n        \"0.01\": 236.13787619152214,\n        \"0.1\": 347.62523838143886,\n        \"1\": 470.2084070455666,\n        \"10\": 579.598843067834\n      },\n      \"max_lowmach_Re_at_L1m\": 51263111.94966675,\n      \"max_lowmach_Re_at_L3m\": 153789335.84900028,\n      \"max_lowmach_Re_at_L10m\": 512631119.4966675\n    }\n  },\n  \"mars_L10m_general_BL_max_altitude_km\": 8.10040395907399\n}\n\nGenerated: Fig1_Planetary_Model_Validity_Combined.pdf, Fig2_Characteristic_Length_Effects.pdf, Supplement_Mars_L1m_vs_L10m.pdf\n"
+    },
+    "fig03": {
+      "script": "fig03_mars_length_maps.py",
+      "files": [
+        "fig03.png",
+        "fig03.pdf",
+        "fig03.svg"
+      ],
+      "stdout_tail": "Earth Ucrit_surface= 101.492; Ucrit_range=  81.811-- 101.492; Lcrit= 0.07380; Kn1km=  85.742; Kn10km=  98.750\nMars  Ucrit_surface=  67.573; Ucrit_range=  54.813--  68.761; Lcrit= 4.32449; Kn1km=  75.165; Kn10km=  91.909\nTitan Ucrit_surface=  59.784; Ucrit_range=  51.456--  81.945; Lcrit= 0.00975; Kn1km= 470.208; Kn10km= 579.599\nEarth at U100 Mach crossing z= 1.8501572355425078\nMars broader BL max altitude at L10= 8.1003539640631\n"
+    },
+    "fig04": {
+      "script": "fig04_master_map.py",
+      "files": [
+        "fig04.png",
+        "fig04.pdf",
+        "fig04.svg"
+      ],
+      "stdout_tail": " {\n          \"Re_1e4\": [\n            30.49350281400491\n          ]\n        }\n      },\n      \"kn_boundary_altitude_km\": 75.16522161705657\n    },\n    \"titan\": {\n      \"10_ms\": {\n        \"U_ms\": 10.0,\n        \"z_end_Kn_0p01_km\": 470.2084070455642,\n        \"surface_Re\": 8574720.987164913,\n        \"surface_Ma\": 0.05018065034122841,\n        \"Re_at_Kn_boundary\": 5.9155536521371905,\n        \"Ma_at_Kn_boundary\": 0.03994300499542743,\n        \"surface_class\": \"Boundary-layer\",\n        \"mastermap_class_disagreement_pct\": 0.02126528442317916,\n        \"max_gamma_in_plot\": 1.4735,\n        \"min_gamma_in_plot\": 1.4002,\n        \"max_Kn_identity_ratio_deviation_pct\": 4.20413274454845,\n        \"crossings_km\": {\n          \"Re_5e5\": [\n            55.782205913789824\n          ],\n          \"Re_1e4\": [\n            124.6205299696671\n          ]\n        }\n      },\n      \"100_ms\": {\n        \"U_ms\": 100.0,\n        \"z_end_Kn_0p01_km\": 470.2084070455642,\n        \"surface_Re\": 85747209.87164915,\n        \"surface_Ma\": 0.501806503412284,\n        \"Re_at_Kn_boundary\": 59.1555365213719,\n        \"Ma_at_Kn_boundary\": 0.39943004995427434,\n        \"surface_class\": \"Compressible NS\",\n        \"mastermap_class_disagreement_pct\": 0.02126528442317916,\n        \"max_gamma_in_plot\": 1.4735,\n        \"min_gamma_in_plot\": 1.4002,\n        \"max_Kn_identity_ratio_deviation_pct\": 4.204132744548472,\n        \"crossings_km\": {\n          \"Re_5e5\": [\n            82.3417783898218\n          ],\n          \"Re_1e4\": [\n            210.34930327079\n          ]\n        }\n      },\n      \"kn_boundary_altitude_km\": 470.2084070455642\n    }\n  }\n}\n"
+    },
+    "fig05": {
+      "script": "fig05_analytical_kn.py",
+      "files": [
+        "fig05.png",
+        "fig05.pdf",
+        "fig05.svg"
+      ],
+      "stdout_tail": "earth H0=8.45651 km, lam0=6.531186e-08 m, iso=100.96157 km, GRAM=85.74178 km, delta=+15.21979 km\nmars H0=10.36249 km, lam0=3.928091e-06 m, iso=81.26461 km, GRAM=75.16522 km, delta=+6.09939 km\ntitan H0=19.78388 km, lam0=9.043264e-09 m, iso=275.31392 km, GRAM=470.20841 km, delta=-194.89449 km\n"
+    },
+    "fig06": {
+      "script": "fig06_local_lambda_gradient.py",
+      "files": [
+        "fig06.png",
+        "fig06.pdf",
+        "fig06.svg"
+      ],
+      "stdout_tail": "Earth Q=4.4280334e-08 m Lcrit=0.073801 m H0=8.4565 km zKn=85.7418 km Hlambda=5.888 km dloglam/dz=0.16983/km\nMars Q=2.59469554e-06 m Lcrit=4.324493 m H0=10.3625 km zKn=75.1652 km Hlambda=7.754 km dloglam/dz=0.12896/km\nTitan Q=5.8521613e-09 m Lcrit=0.009754 m H0=19.7839 km zKn=470.2084 km Hlambda=51.569 km dloglam/dz=0.01939/km\n"
+    },
+    "fig07": {
+      "script": "fig07_sensitivity_zeros.py",
+      "files": [
+        "fig07.png",
+        "fig07.pdf",
+        "fig07.svg"
+      ],
+      "stdout_tail": "planet  reference_ReMax_at_z0     H0_km  isothermal_eq48_intersection_km  GRAM_intersection_km  in_plotted_domain\n Earth           6.775017e+06  8.456506                        22.040945             20.520502               True\n  Mars           1.156205e+05 10.362494                       -15.173746                   NaN              False\n Titan           5.126311e+07 19.783877                        91.601695             75.391080               True\n"
+    },
+    "fig08": {
+      "script": "fig08_retransition_sensitivity.py",
+      "files": [
+        "fig08.png",
+        "fig08.pdf",
+        "fig08.svg"
+      ],
+      "stdout_tail": "Earth at 5e5 3.2680891132181724 at 1e7 0.0\nMars at 5e5 0.0 at 1e7 0.0\nTitan at 5e5 4.343760723292477 at 1e7 0.6726215123336698\n"
+    },
+    "fig09": {
+      "script": "fig09_atmospheric_variability.py",
+      "files": [
+        "fig09.png",
+        "fig09.pdf",
+        "fig09.svg"
+      ],
+      "stdout_tail": "Fig09: 96 individual profiles plotted; weighted statistics match archived values\n"
+    }
+  },
+  "verified_processed_data": true
+}

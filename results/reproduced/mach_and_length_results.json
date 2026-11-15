@@ -1,0 +1,60 @@
+{
+  "Earth": {
+    "planet": "Earth",
+    "Mach_threshold_surface_ms": 101.49196875,
+    "Mach_threshold_min_ms": 81.81051042,
+    "Mach_threshold_max_ms": 101.49196875,
+    "Mach_threshold_min_altitude_km": 95.0,
+    "Mach_threshold_max_altitude_km": 0.0,
+    "Max_lowMach_Re_at_L1m": 6775016.643502401,
+    "Critical_length_for_broader_BL_m": 0.07380055670852505,
+    "Kn0p01_altitude_L1_km": 85.74178270160698,
+    "Kn0p01_altitude_L10_km": 98.74978033987152,
+    "csv_filename": "earth3.csv",
+    "csv_sha256": "f3e887d7f4efe4c6d6881600d9a58f7588298cee05563f9350748655f7131465"
+  },
+  "Mars": {
+    "planet": "Mars",
+    "Mach_threshold_surface_ms": 67.57295819999999,
+    "Mach_threshold_min_ms": 54.813406199999996,
+    "Mach_threshold_max_ms": 68.7605832,
+    "Mach_threshold_min_altitude_km": 100.0,
+    "Mach_threshold_max_altitude_km": 4.0,
+    "Max_lowMach_Re_at_L1m": 115620.50179447002,
+    "Critical_length_for_broader_BL_m": 4.324492561784698,
+    "Kn0p01_altitude_L1_km": 75.16522161705697,
+    "Kn0p01_altitude_L10_km": 91.90929861447532,
+    "csv_filename": "mars3(1).csv",
+    "csv_sha256": "cc16136c0ab502f5ccebe7f5cc0fd67230a1b18bef4d22a40a148f3681db9618"
+  },
+  "Titan": {
+    "planet": "Titan",
+    "Mach_threshold_surface_ms": 59.784,
+    "Mach_threshold_min_ms": 51.456,
+    "Mach_threshold_max_ms": 81.945,
+    "Mach_threshold_min_altitude_km": 40.0,
+    "Mach_threshold_max_altitude_km": 295.0,
+    "Max_lowMach_Re_at_L1m": 51263111.94966673,
+    "Critical_length_for_broader_BL_m": 0.009753602170912501,
+    "Kn0p01_altitude_L1_km": 470.20840704556423,
+    "Kn0p01_altitude_L10_km": 579.598843067834,
+    "csv_filename": "titan3.csv",
+    "csv_sha256": "72894c407099d78eaac4aec8a04a8f15bc6183ead6c9643b9a9712044a561eed"
+  },
+  "_metadata": {
+    "source": "The exact three uploaded GRAM-derived final CSVs (no new GRAM model runs)",
+    "Mach_threshold": "Ucrit(z) = 0.3 * SpeedOfSound_ms(z)",
+    "classification": "priority: Kn>=0.01 rarefied; Ma>=0.3 compressible NS; Re<1e4 incompressible; Re<5e5 Blasius; otherwise broader BL",
+    "L_values_m": [
+      1,
+      10
+    ],
+    "Mars_figure_altitude_range_km": [
+      0,
+      25
+    ],
+    "display_interpolation": "log-PCHIP for positive properties; underlying profile samples 1 km apart",
+    "Earth_at_U100_Mach_0p3_crossing_km": 1.8501572355425078,
+    "Mars_at_L10_boundary_layer_max_altitude_km": 8.1003539640631
+  }
+}

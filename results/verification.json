@@ -1,0 +1,24 @@
+{
+  "profile_checks": {
+    "earth": {
+      "rows": 2201,
+      "sha256": "f3e887d7f4efe4c6d6881600d9a58f7588298cee05563f9350748655f7131465",
+      "kn01_crossing_L1_km": 85.74178270160698,
+      "reference_surface_Lcrit_m": 0.07380055670852513
+    },
+    "mars": {
+      "rows": 2201,
+      "sha256": "cc16136c0ab502f5ccebe7f5cc0fd67230a1b18bef4d22a40a148f3681db9618",
+      "kn01_crossing_L1_km": 75.16522161705697,
+      "reference_surface_Lcrit_m": 4.324492561784702
+    },
+    "titan": {
+      "rows": 2201,
+      "sha256": "72894c407099d78eaac4aec8a04a8f15bc6183ead6c9643b9a9712044a561eed",
+      "kn01_crossing_L1_km": 470.20840704556423,
+      "reference_surface_Lcrit_m": 0.009753602170912496
+    }
+  },
+  "individual_cases": 96,
+  "figure_count": 9
+}

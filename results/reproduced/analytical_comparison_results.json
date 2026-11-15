@@ -1,0 +1,34 @@
+{
+  "earth": {
+    "surface_scale_height_km": 8.456506252543749,
+    "surface_mean_free_path_m": 6.53118590797e-08,
+    "isothermal_boundary_km": 100.96156872751558,
+    "gram_boundary_km": 85.74178270160698,
+    "isothermal_minus_gram_km": 15.219786025908604
+  },
+  "mars": {
+    "surface_scale_height_km": 10.362494007031147,
+    "surface_mean_free_path_m": 3.92809137731e-06,
+    "isothermal_boundary_km": 81.26461287446425,
+    "gram_boundary_km": 75.16522161705643,
+    "isothermal_minus_gram_km": 6.099391257407817
+  },
+  "titan": {
+    "surface_scale_height_km": 19.783876637773936,
+    "surface_mean_free_path_m": 9.04326355156e-09,
+    "isothermal_boundary_km": 275.31392155485827,
+    "gram_boundary_km": 470.20840704556423,
+    "isothermal_minus_gram_km": -194.89448549070596
+  },
+  "method": {
+    "reference_altitudes_km": [
+      0,
+      1
+    ],
+    "Kn_critical": 0.01,
+    "L_m": 1.0,
+    "isothermal_model": "lambda0 * exp(z / H0)",
+    "H0": "1 km / ln[p(0 km) / p(1 km)]",
+    "crossover_method": "PCHIP interpolated log(lambda) crossing of log(0.01 m)"
+  }
+}

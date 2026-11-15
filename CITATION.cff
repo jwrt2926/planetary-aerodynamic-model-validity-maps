@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or derived reference profiles, cite this archive."
+type: software
+title: "Planetary Aerodynamic Model-Validity Maps: A Dimensionless Comparison of Earth, Mars and Titan"
+authors:
+  - family-names: Taylor
+    given-names: James
+version: 1.0.0
+repository-code: "https://github.com/jwrt2926/planetary-aerodynamic-model-validity-maps"
+keywords:
+  - planetary atmospheres
+  - aerodynamic model selection
+  - Reynolds number
+  - Mach number
+  - Knudsen number
+  - NASA GRAM

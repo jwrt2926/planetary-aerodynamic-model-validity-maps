@@ -1,0 +1,190 @@
+{
+  "method": {
+    "U_mps": 10.0,
+    "L_m": 1.0,
+    "H0": "1 km / ln[p(0km)/p(1km)]",
+    "Re_analytical": "Re0 exp(-z/H0), Re0=rho0*U*L/mu0",
+    "Mach_analytical": "Ma=U/a0; boundary speed=0.3*a0",
+    "Kn_analytical": "lambda0 exp(z/H0) / L",
+    "actual": "Re(z) from rho,mu; Mach critical speed=0.3 a(z); Kn from lambda; PCHIP log for crossover locations"
+  },
+  "planets": {
+    "Earth": {
+      "source_filename": "earth3.csv",
+      "source_sha256": "f3e887d7f4efe4c6d6881600d9a58f7588298cee05563f9350748655f7131465",
+      "range_km": [
+        0,
+        100
+      ],
+      "surface_reference": {
+        "rho0": 1.198642188,
+        "mu0": 1.79560526399e-05,
+        "a0": 338.3065625,
+        "lambda0": 6.53118590797e-08,
+        "H0": 8.456506252543749
+      },
+      "Re_switch_cases": [
+        {
+          "planet": "Earth",
+          "Re_threshold": 10000,
+          "U_ms": 10.0,
+          "L_m": 1.0,
+          "isothermal_z_km": 35.52593,
+          "GRAM_z_km": 30.854496,
+          "analytical_minus_GRAM_km": 4.671434,
+          "isothermal_U_Ma03_ms": 101.491969,
+          "GRAM_U_Ma03_min_ms": 81.81051,
+          "GRAM_U_Ma03_max_ms": 101.491969,
+          "GRAM_U_Ma03_max_abs_delta_from_isothermal_ms": 19.681458,
+          "H0_km": 8.456506
+        },
+        {
+          "planet": "Earth",
+          "Re_threshold": 500000,
+          "U_ms": 10.0,
+          "L_m": 1.0,
+          "isothermal_z_km": 2.443883,
+          "GRAM_z_km": 3.231598,
+          "analytical_minus_GRAM_km": -0.787715,
+          "isothermal_U_Ma03_ms": 101.491969,
+          "GRAM_U_Ma03_min_ms": 81.81051,
+          "GRAM_U_Ma03_max_ms": 101.491969,
+          "GRAM_U_Ma03_max_abs_delta_from_isothermal_ms": 19.681458,
+          "H0_km": 8.456506
+        }
+      ],
+      "Kn_scale_height": {
+        "planet": "Earth",
+        "H0_surface_pressure_km": 8.456506,
+        "z_Kn_GRAM_L1_km": 85.741783,
+        "z_Kn_isothermal_L1_km": 100.961569,
+        "isothermal_minus_GRAM_km": 15.219786,
+        "isothermal_relative_error_pct": 17.750723,
+        "Hlambda_local_at_L1_km": 5.888082,
+        "slope_z_vs_lnL_L0p1_to_1_km": 6.508849,
+        "slope_z_vs_lnL_L1_to_10_km": 5.649302,
+        "surface_H0_predicted_slope_km": 8.456506,
+        "actual_z_Kn_L0p1_km": 70.754603,
+        "actual_z_Kn_L10_km": 98.74978
+      }
+    },
+    "Mars": {
+      "source_filename": "mars3.csv",
+      "source_sha256": "cc16136c0ab502f5ccebe7f5cc0fd67230a1b18bef4d22a40a148f3681db9618",
+      "range_km": [
+        0,
+        100
+      ],
+      "surface_reference": {
+        "rho0": 0.0173608785,
+        "mu0": 1.01463486059e-05,
+        "a0": 225.243194,
+        "lambda0": 3.92809137731e-06,
+        "H0": 10.362494007031147
+      },
+      "Re_switch_cases": [
+        {
+          "planet": "Mars",
+          "Re_threshold": 10000,
+          "U_ms": 10.0,
+          "L_m": 1.0,
+          "isothermal_z_km": 5.565752,
+          "GRAM_z_km": 4.571738,
+          "analytical_minus_GRAM_km": 0.994014,
+          "isothermal_U_Ma03_ms": 67.572958,
+          "GRAM_U_Ma03_min_ms": 54.813406,
+          "GRAM_U_Ma03_max_ms": 68.760583,
+          "GRAM_U_Ma03_max_abs_delta_from_isothermal_ms": 12.759552,
+          "H0_km": 10.362494
+        },
+        {
+          "planet": "Mars",
+          "Re_threshold": 500000,
+          "U_ms": 10.0,
+          "L_m": 1.0,
+          "isothermal_z_km": null,
+          "GRAM_z_km": null,
+          "analytical_minus_GRAM_km": null,
+          "isothermal_U_Ma03_ms": 67.572958,
+          "GRAM_U_Ma03_min_ms": 54.813406,
+          "GRAM_U_Ma03_max_ms": 68.760583,
+          "GRAM_U_Ma03_max_abs_delta_from_isothermal_ms": 12.759552,
+          "H0_km": 10.362494
+        }
+      ],
+      "Kn_scale_height": {
+        "planet": "Mars",
+        "H0_surface_pressure_km": 10.362494,
+        "z_Kn_GRAM_L1_km": 75.165222,
+        "z_Kn_isothermal_L1_km": 81.264613,
+        "isothermal_minus_GRAM_km": 6.099391,
+        "isothermal_relative_error_pct": 8.114645,
+        "Hlambda_local_at_L1_km": 7.754119,
+        "slope_z_vs_lnL_L0p1_to_1_km": 8.913226,
+        "slope_z_vs_lnL_L1_to_10_km": 7.27186,
+        "surface_H0_predicted_slope_km": 10.362494,
+        "actual_z_Kn_L0p1_km": 54.64176,
+        "actual_z_Kn_L10_km": 91.909299
+      }
+    },
+    "Titan": {
+      "source_filename": "titan3.csv",
+      "source_sha256": "72894c407099d78eaac4aec8a04a8f15bc6183ead6c9643b9a9712044a561eed",
+      "range_km": [
+        0,
+        500
+      ],
+      "surface_reference": {
+        "rho0": 5.435,
+        "mu0": 6.33839865826e-06,
+        "a0": 199.28,
+        "lambda0": 9.04326355156e-09,
+        "H0": 19.783876637773936
+      },
+      "Re_switch_cases": [
+        {
+          "planet": "Titan",
+          "Re_threshold": 10000,
+          "U_ms": 10.0,
+          "L_m": 1.0,
+          "isothermal_z_km": 133.620078,
+          "GRAM_z_km": 124.619827,
+          "analytical_minus_GRAM_km": 9.000251,
+          "isothermal_U_Ma03_ms": 59.784,
+          "GRAM_U_Ma03_min_ms": 51.456,
+          "GRAM_U_Ma03_max_ms": 81.945,
+          "GRAM_U_Ma03_max_abs_delta_from_isothermal_ms": 22.161,
+          "H0_km": 19.783877
+        },
+        {
+          "planet": "Titan",
+          "Re_threshold": 500000,
+          "U_ms": 10.0,
+          "L_m": 1.0,
+          "isothermal_z_km": 56.225098,
+          "GRAM_z_km": 55.783128,
+          "analytical_minus_GRAM_km": 0.44197,
+          "isothermal_U_Ma03_ms": 59.784,
+          "GRAM_U_Ma03_min_ms": 51.456,
+          "GRAM_U_Ma03_max_ms": 81.945,
+          "GRAM_U_Ma03_max_abs_delta_from_isothermal_ms": 22.161,
+          "H0_km": 19.783877
+        }
+      ],
+      "Kn_scale_height": {
+        "planet": "Titan",
+        "H0_surface_pressure_km": 19.783877,
+        "z_Kn_GRAM_L1_km": 470.208407,
+        "z_Kn_isothermal_L1_km": 275.313922,
+        "isothermal_minus_GRAM_km": -194.894485,
+        "isothermal_relative_error_pct": -41.448533,
+        "Hlambda_local_at_L1_km": 51.568792,
+        "slope_z_vs_lnL_L0p1_to_1_km": 53.237194,
+        "slope_z_vs_lnL_L1_to_10_km": 47.507663,
+        "surface_H0_predicted_slope_km": 19.783877,
+        "actual_z_Kn_L0p1_km": 347.625238,
+        "actual_z_Kn_L10_km": 579.598843
+      }
+    }
+  }
+}
